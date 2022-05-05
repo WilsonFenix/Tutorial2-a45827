@@ -54,8 +54,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7652087811558035603}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7652087811558132981}
@@ -1090,7 +1090,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7652087811558132985}
   - component: {fileID: 7652087811567395601}
-  - component: {fileID: 123075370237864813}
+  - component: {fileID: 350284500}
+  - component: {fileID: 350284501}
   m_Layer: 0
   m_Name: JohnLemon
   m_TagString: Untagged
@@ -1133,7 +1134,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!54 &123075370237864813
+--- !u!54 &350284500
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1147,8 +1148,22 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!136 &350284501
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7652087811558035673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.23018214
+  m_Height: 1.5572625
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.73497075, z: 0.03828025}
 --- !u!1 &7652087811558035675
 GameObject:
   m_ObjectHideFlags: 0

@@ -3389,7 +3389,7 @@ GameObject:
   - component: {fileID: 551796146}
   - component: {fileID: 551796145}
   m_Layer: 5
-  m_Name: ExitImage
+  m_Name: CaughtImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3434,7 +3434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 623a7345ca6d38f4280b86c32ffe7c15, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 85d46c7add1129741a0d78fadba6998e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3735,12 +3735,12 @@ GameObject:
   - component: {fileID: 1346459120}
   - component: {fileID: 1346459119}
   m_Layer: 5
-  m_Name: FaderCanvas
+  m_Name: ' FaderCanvas'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!223 &1346459119
 Canvas:
   m_ObjectHideFlags: 0
@@ -3775,6 +3775,7 @@ RectTransform:
   m_Children:
   - {fileID: 1477859688}
   - {fileID: 551796144}
+  - {fileID: 2048456954}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3905,7 +3906,7 @@ MonoBehaviour:
   displayImageDuration: 1
   player: {fileID: 90046974}
   exitBackgroundImageCanvasGroup: {fileID: 1477859691}
-  caughtBackgroundImageCanvasGroup: {fileID: 0}
+  caughtBackgroundImageCanvasGroup: {fileID: 2048456951}
 --- !u!65 &1794162654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4085,6 +4086,94 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!1 &2048456950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2048456954}
+  - component: {fileID: 2048456953}
+  - component: {fileID: 2048456952}
+  - component: {fileID: 2048456951}
+  m_Layer: 5
+  m_Name: CaughtImageBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!225 &2048456951
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048456950}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &2048456952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048456950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2048456953
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048456950}
+  m_CullTransparentMesh: 1
+--- !u!224 &2048456954
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048456950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1346459120}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &376678791936099000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4130,7 +4219,7 @@ PrefabInstance:
     - target: {fileID: 6845128211333650679, guid: 9ff3095716853334fab95728ea4b6ad0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.38268343
       objectReference: {fileID: 0}
     - target: {fileID: 6845128211333650679, guid: 9ff3095716853334fab95728ea4b6ad0,
         type: 3}
@@ -4140,7 +4229,7 @@ PrefabInstance:
     - target: {fileID: 6845128211333650679, guid: 9ff3095716853334fab95728ea4b6ad0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.92387956
       objectReference: {fileID: 0}
     - target: {fileID: 6845128211333650679, guid: 9ff3095716853334fab95728ea4b6ad0,
         type: 3}
@@ -4155,15 +4244,36 @@ PrefabInstance:
     - target: {fileID: 6845128211333650679, guid: 9ff3095716853334fab95728ea4b6ad0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 135
       objectReference: {fileID: 0}
     - target: {fileID: 6845128211333650679, guid: 9ff3095716853334fab95728ea4b6ad0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5407846813427488050, guid: 9ff3095716853334fab95728ea4b6ad0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9ff3095716853334fab95728ea4b6ad0, type: 3}
+--- !u!1 &376678791936099001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 811794174, guid: 9ff3095716853334fab95728ea4b6ad0,
+    type: 3}
+  m_PrefabInstance: {fileID: 376678791936099000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &376678791936099002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376678791936099001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e84864e98f831144945f279dc9c7eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7652087810171615132}
+  gameEnding: {fileID: 1794162653}
 --- !u!1001 &7652087810171615131
 PrefabInstance:
   m_ObjectHideFlags: 0
